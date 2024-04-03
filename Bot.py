@@ -1,7 +1,6 @@
 import logging
 from telegram.ext import Application, MessageHandler, filters
-
-BOT_TOKEN = ""
+from config import BOT_TOKEM
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG
