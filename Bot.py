@@ -4,7 +4,7 @@ from telegram.ext import CommandHandler
 from telegram import ReplyKeyboardMarkup
 import requests
 import time
-BOT_TOKEN = "6870069852:AAEiK3-y21ckMFMIzhyD7II8VMCBFq9zbMo"
+BOT_TOKEN = ""
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG
 )
