@@ -43,7 +43,7 @@ def generate_poem(message):
 # Сохранение последнего стиха в файл
 @bot.message_handler(commands=['save'])
 def save_poem(message):
-    with open('last_poem.txt', 'w') as file:
+    with open('last_poem.txt', 'w', encoding="utf - 8") as file:
         file.write(last_poem)
     bot.reply_to(message, "Последний стих сохранен в файле 'last_poem.txt'.")
 
@@ -82,6 +82,7 @@ def generate_poem_with_robotext():
         response2 = requests.get(url2, "result")
         response3 = response2.json()
 
+    last_poem = response3["result"]
     return response3["result"]
 
 
